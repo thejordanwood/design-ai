@@ -175,38 +175,38 @@ To maintain strict compliance and federal readability metrics, typography must n
 
 ## Layout & Spacing
 
-The layout philosophy follows a **Fixed Grid** model for desktop to maintain a prestigious, editorial feel, while transitioning to a fluid model for mobile.
+The layout philosophy follows a structured grid model built explicitly around line-length bounding boxes to ensure universal readability and accessibility
 
-A 12-column grid is used for desktop layouts, with generous outer margins to simulate the isolation of a celestial body in the void. Spacing is governed by an 8px base unit, but "negative space" is prioritized—elements should be allowed to breathe, echoing the vastness of space. Component groups should use tight internal spacing (e.g., 8px or 16px) but wide external margins (e.g., 64px or 80px) to create distinct "islands" of content.
+A 12-column grid is used for desktop layouts, with generous outer margins. Spacing is governed by an 8px base unit, but "negative space" is prioritized—elements should be allowed to breathe. Component groups should use tight internal spacing (e.g., 8px or 16px) but wide external margins (e.g., 64px or 80px) to create distinct "islands" of content.
 
 ## Elevation & Depth
 
-Depth in this design system is achieved through **Glassmorphism** and light-based layering rather than traditional drop shadows.
+Depth in this design system is achieved through clean, flat, color layering rather than traditional drop shadows, complex gradients, or heavy atmospheric blurs
 
-- **Level 1 (Base):** Deep obsidian/neutral background.
-- **Level 2 (Panels):** Semi-transparent surfaces (10-20% opacity) with a `20px` backdrop blur. These layers should have a `1px` inner stroke of white at 10% opacity to define the edge, simulating a glass refraction.
-- **Level 3 (Interactive):** Elements that are hovered or active should emit an "Ambient Glow." This is a soft, diffused shadow tinted with the `Secondary` or `Primary` color, creating the effect of light bleeding from behind the object.
+- **Level 1 (Base):** Solid color providing a pristine, high-contrast canvas for document scanning.
+- **Level 2 (Panels):** Pure solid fills bounded by a sharp 1px stroke to isolate supporting data blocks clearly without adding visual clutter.
+- **Level 3 (Interactive):** Active, hovered, or focused components do not use ambient glows; instead, they shift dynamically to high-contrast fills or trigger sharp, highly visible outline focus rings to guarantee unambiguous keyboard navigation tracking.
 
 ## Shapes
 
-The shape language is "Soft-Technical." While the overall feel is geometric, a small corner radius is applied to all components to prevent the UI from feeling too aggressive or "sharp."
+The shape language is "Rigid-Institutional." The overall aesthetic leans intentionally geometric and structured to project absolute stability, civic authority, and administrative order.
 
-Buttons and input fields should utilize the `rounded-lg` (8px) setting for a modern feel. For specific decorative elements, such as image containers or featured cards, the `rounded-xl` (12px) setting can be used to soften the composition. Circles and perfect arcs are encouraged as supporting graphic elements to mirror the orbital theme of the festival.
+Buttons, input fields, and standard container cards utilize the sharp, low-radius boundaries to give interfaces an explicit, predictable form factor. Larger structural modules maintain these constrained corner treatments to preserve uniform presentation across desktop and mobile screens. Organic fluid arcs, full circles, and purely decorative abstract geometries are omitted to prevent user distraction from core programmatic data.
 
 ## Components
 
 ### Action Elements
 
-Buttons utilize `Space Grotesk` for a technical, high-impact feel; the Primary button mimics the "diamond ring" flash with a luminous amber glow on hover. Secondary buttons remain ethereal with a cyan outline, suggesting the sky's transition during totality.
+Primary buttons utilize `Nunito` semibold for a clear, legible action target; the button uses a solid fill that shifts to a deeply saturated tone on hover to clear any ambiguity regarding focus. Secondary buttons feature a flat transparent center with a distinct primary outline, ensuring interactive priorities remain immediately identifiable.
 
 ### Containers & Surfaces
 
-Cards implement level-2 glassmorphism using a semi-transparent `surface-variant` fill and a fine 1px inner stroke to simulate light refraction on glass edges. For interactive states, cards should expand their "Ambient Glow" using the Secondary Cyan color to indicate focus.
+Cards implement flat paneling, leveraging a solid, reliable background and a defined outer border to enclose content blocks securely. For interactive hover states, cards drop unnecessary borders, providing an immediate, non-distracting visual indicator of focus.
 
 ### Inputs & Selection
 
-Input fields are anchored in the deepest `surface-container-lowest` to provide maximum contrast for entered text. Focus states use the Secondary Cyan border to maintain the cosmic color story without distracting from content.
+Input fields are anchored inside a high-visibility foundation, framed by a persistent, dark border to clearly outline form constraints. Active focus states aggressively swap to a thicker border to maintain strict compliance with federal orientation guidelines without introducing unnecessary decorative elements.
 
 ### Typography Application
 
-`headline-xl` should always be paired with a subtle primary-colored glow when placed on dark backgrounds to ensure it feels "radiant" rather than static. List items use a tighter `rounded-md` corner to differentiate them from larger, more prominent layout containers.
+Headlines must always remain perfectly flat, sharp, and high-contrast against background layers to guarantee absolute reading legibility. List items use a matching edge profile to establish a cohesive visual rhythm alongside larger, more prominent layout entry fields.
